@@ -1,0 +1,96 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Tab</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.startpage.com/sp/cdn/favicons/mstile-310x310--default.png"/>
+        <link href="search.css" rel="stylesheet" /> 
+  <style>input, button
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#cover
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 550px;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #A7C7E7;
+    border-radius: 20px; 
+    transform: scale(0.6);
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="button"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--font-color);
+    }</style>
+<body> 
+  <button href="google"> Google </button>
+  <button href="startpage"> Startpage </button>
+  <button href="duckduckgo"> DuckDuckGo </button>
+
+
+
+          
+                   <div align="right" style="vertical-align: top;">
+    <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+  </div>
+
+
+<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
+     <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+  
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+    
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+            }
+        })();</script>
+     
+
+      <p class="text-xl text-gray-500">
+
+      </p>
+    <hr />
+     <p>   
+     </p>
+
+
+
+  </body>
+</html>
