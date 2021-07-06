@@ -39,8 +39,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 58px;
+  height: 32px;
 }
 
 /* Hide default HTML checkbox */
@@ -66,8 +66,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 35px;
   left: 0px;
   bottom: 4px;
   top: 0;
@@ -335,4 +335,12 @@ hr {
 	height:1px;
 	border:none;
 	margin:-1px 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
