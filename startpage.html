@@ -1,0 +1,70 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Startpage - New Tab</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.startpage.com/sp/cdn/favicons/mstile-310x310--default.png"/>
+        <link href="style.css" rel="stylesheet" /> 
+  
+<body> 
+     
+     
+    
+
+
+<div id="cover">
+<form method="post" action="https://www.startpage.com/sp/search">
+    <div class="tb">
+      <div class="td"><input type="text" name="q" placeholder="Search" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+   
+</div>
+
+  <div align="right" style="vertical-align: top;">
+    <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+  </div>
+<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
+
+    <script>
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+  
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+    
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+            }
+        })();</script>
+      <p class="text-xl text-gray-500">
+
+      </p>
+    <hr />
+     <p>   
+     </p>
+
+
+
+  </body>
+</html>
